@@ -1,5 +1,5 @@
 # Genetic Algorithm for the optimisation of pipeline diameters
-# Written by Bowen Fan, UCL
+# Origional by Bowen Fan, UCL, Updated for Epyt 2025 by Ace Frazier
 import epyt
 from epyt import epanet
 import numpy as np
