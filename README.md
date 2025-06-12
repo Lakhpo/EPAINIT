@@ -58,6 +58,57 @@ Results for the Two-Loop and Hanoi networks were successfully replicated. The Go
 
 > _See `results/` folder or Table 1 for comparison with SDN-WPN (2022)._
 
+
+
+# Setting Up Optimization
+
+## 1. Installation
+
+### 1.1 Requirements
+
+To run the optimization program, make sure the following are installed:
+
+- **Python**: Version 3.12.6 (used for development)
+- **Packages** (listed in `requirements.txt`):
+  - `epyt`
+  - `numpy`
+  - `PySimpleGUI`*
+  - `matplotlib`
+  - `csv`
+  - `random`
+- **EPANET 2.2**: Download from [EPA's website](https://www.epa.gov/water-research/epanet)
+- An EPANET `.net` or `.inp` file you want to optimize
+- A `.csv` file with pipe diameters and cost per unit length
+
+### 1.2 File Setup
+
+#### CSV File Format
+
+Your CSV file must contain **two columns**:
+
+1. **Pipe Diameter** (in **millimeters**)
+2. **Cost per Unit Length** (in **meters**)
+![Example](relative/path/to/image.png)
+
+
+> ⚠️ Ensure the units in your CSV match the units in your EPANET file.
+
+#### EPANET File Setup
+
+1. Open your `.net` file in EPANET.
+2. Set flow units to **CMH**:
+   - Go to `Project > Defaults...`
+   - Under flow units, select **CMH (Cubic Meters per Hour)**
+3. Export your network:
+   - Go to `File > Export > Network` to generate the `.inp` file used by the optimizer.
+
+---
+
+## 2. Running the Program (PySimpleGUI Version)
+
+1. Open and run `EPAnet GA optimizer.py`
+2. Input your parameters through the GUI and start the optimization.
+
 ## Future Developments
 
 Planned improvements include:
