@@ -88,7 +88,7 @@ Your CSV file must contain **two columns**:
 
 1. **Pipe Diameter** (in **millimeters**)
 2. **Cost per Unit Length** (in **meters**)
-![Example](READMEFigures\CSVSETUPFIG.png)
+![Example](READMEFigures/CSVSETUPFIG.png)
 
 
 > ⚠️ Ensure the units in your CSV match the units in your EPANET file.
