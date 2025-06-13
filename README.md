@@ -98,10 +98,12 @@ Your CSV file must contain **two columns**:
 1. Open your `.net` file in EPANET.
 2. Set flow units to **CMH**:
    - Go to `Project > Defaults...`
-   - Under flow units, select **CMH (Cubic Meters per Hour)**
+   ![Project>Defults](READMEFigures/EPASETUPFIG.png)
+   - Under the "Hydrolics" tab, select **CMH (Cubic Meters per Hour)**
+   ![FLOWUNITS](READMEFigures/HYDROLICSETUPFIG.png)
 3. Export your network:
    - Go to `File > Export > Network` to generate the `.inp` file used by the optimizer.
-
+   ![EXPORT](READMEFigures/EXPORTSETUPFIG.png)
 ---
 
 ## 2. Running the Program (PySimpleGUI Version)
@@ -119,7 +121,7 @@ Planned improvements include:
 
 ## Acknowledgments
 
-Original code adapted from [this UCL thesis GitHub repository](https://github.com/bowenfan96/epanet-genetic-algorithm).
+Original optimizer adapted from [this UCL thesis GitHub repository](https://github.com/bowenfan96/epanet-genetic-algorithm).
 
 ## Contact
 
