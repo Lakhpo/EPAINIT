@@ -1,0 +1,6 @@
+epyt
+numpy
+matplotlib
+csv
+random
+https://PySimpleGUI.net/install PySimpleGUI
