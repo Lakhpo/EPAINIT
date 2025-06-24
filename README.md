@@ -76,6 +76,7 @@ To run the optimization program, make sure the following are installed:
   - `matplotlib`
   - `csv`
   - `random`
+ *`PySimpleGUI` cannot be installed via pip and instead must be installed with the link to the Private PyPi server using `python -m pip install --upgrade --extra-index-url https://PySimpleGUI.net/install PySimpleGUI`
 - **EPANET 2.2**: Download from [EPA's website](https://www.epa.gov/water-research/epanet)
 - An EPANET `.net` or `.inp` file you want to optimize
 - A `.csv` file with pipe diameters and cost per unit length
